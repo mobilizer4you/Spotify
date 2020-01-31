@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+  </head>
+  <body class="container bg-dark">
+
+    <div class="container">
+
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid bg-dark">
+                <div class="container">
+                  <h4><span><i class="fab fa-spotify"></i></span></h4>
+                  <h1 class="display-4 font-weight-bold text-success text-center">Spot-A-Quiz</h1>
+                  <h2 class="text-center text-success font-weight-bold">Answer a few questions and find your Spot-A-Friend(s)!!!!</h2>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="form-group">
+                <label class="h3 text-success font-weight-bold" for="genderFormControlSelect1">Select your FAVORITE music genre.</label>
+                <select class="form-control font-weight-bold text-dark bg-success" id="q1">
+                  <option placeholder="Gender"></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="h3 text-success font-weight-bold" for="genderFormControlSelect1">Select your SECOND FAVORITE music genre.</label>
+                <select class="form-control font-weight-bold text-dark bg-success" id="q2">
+                  <option placeholder="Gender"></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="h3 text-success font-weight-bold" for="genderFormControlSelect1">Select your THIRD FAVORITE music genre.</label>
+                <select class="form-control font-weight-bold text-dark bg-success" id="q3">
+                  <option placeholder="Gender"></option>
+                </select>
+            </div>
+        </div>
+
+        <button
+          type="submit"
+          class="h3 btn btn-success btn-lg btn-block text-dark font-weight-bold"
+        >
+          Submit
+        </button>
+
+    <script>
+      var genres = [
+        "acoustic",
+        "afrobeat",
+        "alt-rock",
+        "alternative",
+        "ambient",
+        "anime",
+        "black-metal",
+        "bluegrass",
+        "blues",
+        "bossanova",
+        "brazil",
+        "breakbeat",
+        "british",
+        "cantopop",
+        "chicago-house",
+        "children",
+        "chill",
+        "classical",
+        "club",
+        "comedy",
+        "country",
+        "dance",
+        "dancehall",
+        "death-metal",
+        "deep-house",
+        "detroit-techno",
+        "disco",
+        "disney",
+        "drum-and-bass",
+        "dub",
+        "dubstep",
+        "edm",
+        "electro",
+        "electronic",
+        "emo",
+        "folk",
+        "forro",
+        "french",
+        "funk",
+        "garage",
+        "german",
+        "gospel",
+        "goth",
+        "grindcore",
+        "groove",
+        "grunge",
+        "guitar",
+        "happy",
+        "hard-rock",
+        "hardcore",
+        "hardstyle",
+        "heavy-metal",
+        "hip-hop",
+        "holidays",
+        "honky-tonk",
+        "house",
+        "idm",
+        "indian",
+        "indie",
+        "indie-pop",
+        "industrial",
+        "iranian",
+        "j-dance",
+        "j-idol",
+        "j-pop",
+        "j-rock",
+        "jazz",
+        "k-pop",
+        "kids",
+        "latin",
+        "latino",
+        "malay",
+        "mandopop",
+        "metal",
+        "metal-misc",
+        "metalcore",
+        "minimal-techno",
+        "movies",
+        "mpb",
+        "new-age",
+        "new-release",
+        "opera",
+        "pagode",
+        "party",
+        "philippines-opm",
+        "piano",
+        "pop",
+        "pop-film",
+        "post-dubstep",
+        "power-pop",
+        "progressive-house",
+        "psych-rock",
+        "punk",
+        "punk-rock",
+        "r-n-b",
+        "rainy-day",
+        "reggae",
+        "reggaeton",
+        "road-trip",
+        "rock",
+        "rock-n-roll",
+        "rockabilly",
+        "romance",
+        "sad",
+        "salsa",
+        "samba",
+        "sertanejo",
+        "show-tunes",
+        "singer-songwriter",
+        "ska",
+        "sleep",
+        "songwriter",
+        "soul",
+        "soundtracks",
+        "spanish",
+        "study",
+        "summer",
+        "swedish",
+        "synth-pop",
+        "tango",
+        "techno",
+        "trance",
+        "trip-hop",
+        "turkish",
+        "work-out",
+        "world-music"
+      ];
+      var option = "";
+      for (var i = 0; i < genres.length; i++) {
+        option +=
+          '<option value="' + genres[i] + '">' + genres[i] + "</option>";
+      }
+      $("#q1").append(option);
+      $("#q2").append(option);
+      $("#q3").append(option);
+    </script>
+  </body>
+</html>
