@@ -1,1 +1,1 @@
-# Spot-A-Friend
+# Spotify
